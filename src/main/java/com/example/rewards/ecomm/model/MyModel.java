@@ -13,6 +13,11 @@ public class MyModel {
         private Long id;
         private String name;
 
+        public Customer(String customer) {
+        }
+        public Customer() {
+        }
+
         public Long getId() {
             return id;
         }
@@ -40,6 +45,11 @@ public class MyModel {
         private LocalDateTime purchaseDate;
         @ManyToOne
         private Customer customer;
+
+        public Purchase(double v, LocalDateTime now, Customer customer) {
+        }
+        public Purchase() {
+        }
 
         public Long getId() {
             return id;
