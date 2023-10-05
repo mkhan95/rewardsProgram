@@ -1,6 +1,7 @@
 package com.example.rewards.ecomm.controller;
 
 import com.example.rewards.ecomm.service.MyDataService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/data")
+@Api(value = "Data Management", description = "Endpoints for managing data")
 public class MyDataController {
 
     @Autowired

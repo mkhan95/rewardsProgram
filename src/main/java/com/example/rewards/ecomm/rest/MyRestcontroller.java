@@ -1,6 +1,7 @@
 package com.example.rewards.ecomm.rest;
 
-
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import com.example.rewards.ecomm.service.RewardService;
 import com.example.rewards.ecomm.model.MyModel;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/purchases")
+@Api(value = "Purchase Management", description = "Endpoints for managing purchases")
 public class MyRestcontroller {
     @Autowired
     private RewardService rewardService;
