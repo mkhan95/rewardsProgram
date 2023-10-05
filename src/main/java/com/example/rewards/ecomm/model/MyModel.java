@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 public class MyModel {
 
     @Entity
-    public class Customer {
+    public static class Customer {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
@@ -32,7 +32,7 @@ public class MyModel {
     }
 
     @Entity
-    public class Purchase {
+    public static class Purchase {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
