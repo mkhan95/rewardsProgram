@@ -21,13 +21,19 @@ Build and run the application using Maven:
 
 
 mvn spring-boot:run
+
 The API should now be running locally on http://localhost:8080.
 
 API Endpoints
+
 Record a Purchase
+
 Endpoint: /purchases
+
 Method: POST
+
 Description: Records a purchase and calculates reward points for the customer.
+
 Request Example:
 
 {
